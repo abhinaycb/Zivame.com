@@ -1,23 +1,23 @@
 # Zivame.com
 
-##Project Structure
+## Project Structure
 
-  ###ViewModels
+  ### ViewModels
       Containing ViewController's responsibilities
       
-  ###Views
+  ### Views
     Containing Generic ReUsable Custom Views
   
-  ###MainFiles
+  ### MainFiles
     Containing project related app settings Files
     
-  ###NetworkLayer
+  ### NetworkLayer
     Firebase callback or hardcoded json string to decode model out of json dictionary data.
   
-  ###Controllers
+  ### Controllers
     Containing Main Container for patching diff layers.
   
-  ###HelperFiles
+  ### HelperFiles
    Containing App Specific Constants
   
   
