@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Base Tab Bar View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="BaseTabBarIdentifier" id="BYZ-38-t0r" customClass="BaseTabBarViewController" customModule="ZivameSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-516" y="-236.13193403298354"/>
+        </scene>
+        <!--Fabric And Care View Controller-->
+        <scene sceneID="RTz-VP-f8e">
+            <objects>
+                <viewController storyboardIdentifier="Fab&amp;CareTabBarIdentifier" id="cOH-tT-tAf" customClass="FabricAndCareViewController" customModule="ZivameSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v5l-zJ-4sO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WfE-Cy-x7w">
+                                <rect key="frame" x="0.0" y="30" width="375" height="637"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="0.71372549019999998" green="0.70980392160000005" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cOH-tT-tAf" id="Y6m-j1-056"/>
+                                    <outlet property="delegate" destination="cOH-tT-tAf" id="ZJu-mt-t27"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WfE-Cy-x7w" firstAttribute="leading" secondItem="MMQ-mJ-BmX" secondAttribute="leading" id="3Zr-Or-8lS"/>
+                            <constraint firstItem="WfE-Cy-x7w" firstAttribute="bottom" secondItem="MMQ-mJ-BmX" secondAttribute="bottom" id="Vvi-IC-7fG"/>
+                            <constraint firstItem="WfE-Cy-x7w" firstAttribute="trailing" secondItem="MMQ-mJ-BmX" secondAttribute="trailing" id="br4-Ef-RnY"/>
+                            <constraint firstItem="WfE-Cy-x7w" firstAttribute="top" secondItem="MMQ-mJ-BmX" secondAttribute="top" constant="10" id="jkf-Ec-yJl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MMQ-mJ-BmX"/>
+                    </view>
+                    <connections>
+                        <outlet property="fabricTableView" destination="WfE-Cy-x7w" id="eHH-6O-Vdm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XmY-Fr-Lik" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-479.19999999999999" y="505.99700149925042"/>
+        </scene>
+        <!--Basic Detail View Controller-->
+        <scene sceneID="Re9-En-1E3">
+            <objects>
+                <viewController storyboardIdentifier="BasicTabBarIdentifier" id="1Tv-nG-Io6" customClass="BasicDetailViewController" customModule="ZivameSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="soU-6f-VPm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GdX-uQ-joR">
+                                <rect key="frame" x="20" y="30" width="335" height="637"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GdX-uQ-joR" firstAttribute="leading" secondItem="KlW-1U-Q1q" secondAttribute="leading" constant="20" id="8Ay-ok-coq"/>
+                            <constraint firstItem="GdX-uQ-joR" firstAttribute="trailing" secondItem="KlW-1U-Q1q" secondAttribute="trailing" constant="-20" id="8o9-JU-1XG"/>
+                            <constraint firstItem="GdX-uQ-joR" firstAttribute="bottom" secondItem="KlW-1U-Q1q" secondAttribute="bottom" id="kdb-sH-nRm"/>
+                            <constraint firstItem="GdX-uQ-joR" firstAttribute="top" secondItem="KlW-1U-Q1q" secondAttribute="top" constant="10" id="lyg-5w-vbD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KlW-1U-Q1q"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zPm-O0-EZX"/>
+                    <connections>
+                        <outlet property="basicTextView" destination="GdX-uQ-joR" id="t5Z-Wl-x7t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tnq-R8-hc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1282.4000000000001" y="505.99700149925042"/>
+        </scene>
+        <!--Review View Controller-->
+        <scene sceneID="o2z-WI-Ygr">
+            <objects>
+                <viewController storyboardIdentifier="ReviewTabBarIdentifier" id="46J-dE-hlB" customClass="ReviewViewController" customModule="ZivameSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YEf-vV-GoN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WL8-nV-K68">
+                                <rect key="frame" x="0.0" y="30" width="375" height="637"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1Ab-Jb-eFr" customClass="ReviewTableViewCell" customModule="ZivameSampleApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Ab-Jb-eFr" id="BQN-mF-Obn">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="46J-dE-hlB" id="7hH-vC-7p7"/>
+                                    <outlet property="delegate" destination="46J-dE-hlB" id="0mv-oD-eh8"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WL8-nV-K68" firstAttribute="bottom" secondItem="yms-WH-4BR" secondAttribute="bottom" id="AMe-3g-zMr"/>
+                            <constraint firstItem="WL8-nV-K68" firstAttribute="top" secondItem="yms-WH-4BR" secondAttribute="top" constant="10" id="Abt-Mw-IFg"/>
+                            <constraint firstItem="WL8-nV-K68" firstAttribute="leading" secondItem="yms-WH-4BR" secondAttribute="leading" id="FsM-XO-w6E"/>
+                            <constraint firstItem="WL8-nV-K68" firstAttribute="trailing" secondItem="yms-WH-4BR" secondAttribute="trailing" id="hdQ-Pu-U4W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yms-WH-4BR"/>
+                    </view>
+                    <connections>
+                        <outlet property="reviewTableView" destination="WL8-nV-K68" id="FCM-9I-HKJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fXP-O1-mVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="285.60000000000002" y="505.99700149925042"/>
+        </scene>
+    </scenes>
+</document>
